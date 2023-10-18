@@ -1,0 +1,26 @@
+[package]
+name = "wmi-workshop"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "securitycenter"
+path = "src/securitycenter/bin/main.rs"
+
+[[bin]]
+name = "operatingsys"
+path = "src/operatingsys/bin/main.rs"
+
+[[bin]]
+name = "externproc"
+path = "src/externproc/bin/main.rs"
+
+[dependencies]
+wmi = "0.13.0"
+serde = { version = "1.0", features = ["derive"] }
+# winapi = {version = "0.3.9", features = ["winnt"] }
+
+[dev-dependencies]
+serde_json = { version = "1.0" }
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
